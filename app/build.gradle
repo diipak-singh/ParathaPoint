@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.tecnosols.parathapoint"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 7
+        versionName "2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-database:18.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.support:mediarouter-v7:28.0.0'
+
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+
+    implementation 'com.google.firebase:firebase-auth:18.0.0'
+    implementation 'com.google.firebase:firebase-storage:18.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation('com.paytm:pgplussdk:1.3.3') {
+        transitive = true;
+    }
+    implementation 'com.android.volley:volley:1.1.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

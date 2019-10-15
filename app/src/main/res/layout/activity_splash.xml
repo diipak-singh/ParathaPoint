@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <Button
+        android:id="@+id/button_gettingstarted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#198D44"
+
+        android:fontFamily="serif"
+
+        android:text="Getting  Started"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button_gettingstarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="By Getting Started you agree to, "
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_gettingstarted"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19_privacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="privacy policy "
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_gettingstarted"
+        app:layout_constraintStart_toEndOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="and "
+        app:layout_constraintBottom_toTopOf="@+id/button_gettingstarted"
+        app:layout_constraintStart_toStartOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21_termsOfUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="terms of usage"
+        android:textAllCaps="true"
+        android:textColor="@color/colorRed"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_gettingstarted"
+        app:layout_constraintStart_toEndOf="@+id/textView20" />
+</androidx.constraintlayout.widget.ConstraintLayout>
